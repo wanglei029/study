@@ -2,7 +2,7 @@
     <div class="header">
         <div class="header-left"><span class="iconfont back-icon">&#xe624;</span></div>
         <div class="header-input"><span class="iconfont search-icon">&#xe632;</span>请输入城市景点游玩主题</div>
-        <div class="header-right">城市<span class="iconfont arrow-icon">&#xe64a;</span></div>
+        <div class="header-right">城市<span class="iconfont iconjiantou arrow-icon"></span></div>
     </div>
 </template>
 <script>
@@ -11,10 +11,11 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '~@/assets/styles/varibles.styl'
 .header
     display:flex
     height:.86rem
-    background:#00bcd4
+    background:$bgColor
     justify-content :space-around
     color:#fff
     line-height:.86rem
@@ -37,5 +38,6 @@ export default {
             margin-right :.1rem
     .header-right
         width:1.24rem
-        text-align:center
+        display :flex
+        justify-content :center 
 </style>
