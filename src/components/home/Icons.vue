@@ -35,7 +35,7 @@ export default {
         },
         {
           id: "0003",
-          desc: "品牌特卖",
+          desc: "品牌特卖品牌特卖品牌特卖",
           imgUrl:
             "https://img.alicdn.com/imgextra/i3/2053469401/O1CN016LSPRa2JJi06FDPGB_!!2053469401.gif"
         },
@@ -119,6 +119,7 @@ export default {
   overflow: hidden;
   height: 0;
   padding-bottom: 50%;
+  margin-top:.1rem
 
   .icon {
     position: relative;
