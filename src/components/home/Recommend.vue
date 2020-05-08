@@ -50,62 +50,6 @@ export default {
           title: "人气经典款39元起人气经典款39元起人气经典款39元起",
           desc:
             "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0005",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0006",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0007",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0008",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0009",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0010",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0011",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
         }
       ]
     };
