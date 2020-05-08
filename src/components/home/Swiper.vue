@@ -27,7 +27,7 @@ export default {
             "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01LwHuP72JJi0pnIXsM_!!2053469401.jpg"
         },
         {
-          id: "0001",
+          id: "0002",
           imgurl:
             "https://img.alicdn.com/imgextra/i1/2053469401/O1CN01xsmWc92JJi0rHYxeh_!!2053469401.jpg"
         }
