@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img :src="item.imgUrl" class="item-img" />
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -16,42 +16,9 @@
 <script>
 export default {
   name: "HomeRecommend",
+  props:{list:Array},
   data() {
     return {
-      recommendList: [
-        {
-          id: "0001",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        },
-        {
-          id: "0004",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/1918385168/O1CN01m87kCO1o2zSlFejK8_!!1918385168-0-lubanu-s.jpg_310x310.jpg_.webp",
-          title: "人气经典款39元起人气经典款39元起人气经典款39元起",
-          desc:
-            "人气经典款39元起人气经典款39元起人气经典款39元起人气经典款39元起"
-        }
-      ]
     };
   }
 };

@@ -18,76 +18,77 @@
 <script>
 export default {
   name: "HomeIcons",
+  props:{list:Array},
   data() {
     return {
-      iconList: [
-        {
-          id: "0001",
-          desc: "疯抢排行",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i3/2053469401/O1CN01aQpA9S2JJi0NslMQb_!!2053469401.gif"
-        },
-        {
-          id: "0002",
-          desc: "9.9包邮",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01yAF5em2JJi03dO5Rt_!!2053469401.png"
-        },
-        {
-          id: "0003",
-          desc: "品牌特卖品牌特卖品牌特卖",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i3/2053469401/O1CN016LSPRa2JJi06FDPGB_!!2053469401.gif"
-        },
-        {
-          id: "0004",
-          desc: "每日半价",
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01VHkeLW2JJi03dNHba_!!2053469401.png"
-        },
-        {
-          id: "0005",
-          desc:'折上折',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01cUcsnS2JJi03dPxrH_!!2053469401.png"
-        },
-        {
-          id: "0006",
-          desc:'阿里健康',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i1/2053469401/O1CN01RLtQDC2JJhzzrcYQ1_!!2053469401.png"
-        },
-        {
-          id: "0007",
-          desc:'口碑',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01Kl54Hm2JJi0M4oJzL_!!2053469401.png"
-        },
-        {
-          id: "0008",
-          desc:'饿了么',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i3/2053469401/O1CN011PKStB2JJi01MxH6f_!!2053469401.gif"
-        },
-        {
-          id: "0009",
-          desc:'生活影视',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01X8iL1T2JJi03pYgE1_!!2053469401.png"
-        },
-        {
-          id: "00010",
-          desc:'限时爆品',
-          imgUrl:
-            "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01cd4Sbe2JJi0BtsCQ9_!!2053469401.png"
-        }
-      ]
+      // iconList: [
+      //   {
+      //     id: "0001",
+      //     desc: "疯抢排行",
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i3/2053469401/O1CN01aQpA9S2JJi0NslMQb_!!2053469401.gif"
+      //   },
+      //   {
+      //     id: "0002",
+      //     desc: "9.9包邮",
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01yAF5em2JJi03dO5Rt_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "0003",
+      //     desc: "品牌特卖品牌特卖品牌特卖",
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i3/2053469401/O1CN016LSPRa2JJi06FDPGB_!!2053469401.gif"
+      //   },
+      //   {
+      //     id: "0004",
+      //     desc: "每日半价",
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01VHkeLW2JJi03dNHba_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "0005",
+      //     desc:'折上折',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01cUcsnS2JJi03dPxrH_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "0006",
+      //     desc:'阿里健康',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i1/2053469401/O1CN01RLtQDC2JJhzzrcYQ1_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "0007",
+      //     desc:'口碑',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i4/2053469401/O1CN01Kl54Hm2JJi0M4oJzL_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "0008",
+      //     desc:'饿了么',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i3/2053469401/O1CN011PKStB2JJi01MxH6f_!!2053469401.gif"
+      //   },
+      //   {
+      //     id: "0009",
+      //     desc:'生活影视',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01X8iL1T2JJi03pYgE1_!!2053469401.png"
+      //   },
+      //   {
+      //     id: "00010",
+      //     desc:'限时爆品',
+      //     imgUrl:
+      //       "https://img.alicdn.com/imgextra/i2/2053469401/O1CN01cd4Sbe2JJi0BtsCQ9_!!2053469401.png"
+      //   }
+      // ]
     };
   },
   computed: {
       pages(){
           const pages=[]
-          this.iconList.forEach((item,index)=>{
+          this.list.forEach((item,index)=>{
               const page=Math.floor(index/8)
               if(!pages[page]){
                   pages[page]=[]
