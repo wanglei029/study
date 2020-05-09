@@ -2,7 +2,9 @@
     <div class="header">
         <div class="header-left"><span class="iconfont back-icon">&#xe624;</span></div>
         <div class="header-input"><span class="iconfont search-icon">&#xe632;</span>请输入城市景点游玩主题</div>
+        <router-link to="/city">
         <div class="header-right">{{this.city}}<span class="iconfont iconjiantou arrow-icon"></span></div>
+        </router-link>
     </div>
 </template>
 <script>
@@ -17,11 +19,11 @@ export default {
 @import '~@/assets/styles/varibles.styl'
 .header
     display:flex
-    height:.86rem
+    height:$headerHeight
     background:$bgColor
     justify-content :space-around
     color:#fff
-    line-height:.86rem
+    line-height:$headerHeight
     .header-left
         width: .94rem
         .back-icon
@@ -43,4 +45,5 @@ export default {
         width:1.24rem
         display :flex
         justify-content :center 
+        color :#fff
 </style>
