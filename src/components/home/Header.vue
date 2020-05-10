@@ -3,16 +3,27 @@
         <div class="header-left"><span class="iconfont back-icon">&#xe624;</span></div>
         <div class="header-input"><span class="iconfont search-icon">&#xe632;</span>请输入城市景点游玩主题</div>
         <router-link to="/city">
-        <div class="header-right">{{this.city}}<span class="iconfont iconjiantou arrow-icon"></span></div>
+        <div class="header-right">
+            <!-- {{this.$store.state.city}} -->
+            <!-- {{this.city}} -->
+            {{this.doubleCity}}
+            <span class="iconfont iconjiantou arrow-icon"></span>
+        </div>
         </router-link>
     </div>
 </template>
 <script>
+import {mapState, mapGetters} from 'vuex'
 export default {
   name: 'HomeHeader',
-  props:{
-      city:String, //接收city这样的内容 他的类型是string 
-  },
+//   之前city是通过父组件传递过来的现在不用这种方式了
+//   props:{
+//       city:String, //接收city这样的内容 他的类型是string 
+//   },
+computed: {
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
+},
 }
 </script>
 <style lang="stylus" scoped>
@@ -42,7 +53,8 @@ export default {
         .search-icon
             margin-right :.1rem
     .header-right
-        width:1.24rem
+        min-width:1.04rem
+        padding:0 .1rem
         display :flex
         justify-content :center 
         color :#fff
