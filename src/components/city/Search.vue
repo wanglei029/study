@@ -10,7 +10,6 @@
       </ul>
     </div>
   </div>
-</div>
 </template>
 <script>
 import Bscroll from "better-scroll";
