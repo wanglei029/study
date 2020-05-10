@@ -45,6 +45,7 @@ export default {
             const data=res.data
             this.cities=data.cities
             this.hotCities=data.hotCities
+            console.log(data);
           }
         })
     },
@@ -52,7 +53,7 @@ export default {
       console.log(res);
     },
     handleLetterChange(letter){
-      // console.log(letter);
+      console.log(letter);
       this.letter=letter
     }
   },
