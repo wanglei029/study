@@ -8,8 +8,8 @@
     <home-weekend :list="weekendList"></home-weekend>
   </div>
 </template>
-//整个首页页面应该只发送一个ajax来获取数据 如果每个组件都发送ajax请求会耗费性能 
 <script>
+//整个首页页面应该只发送一个ajax来获取数据 如果每个组件都发送ajax请求会耗费性能 
 import HomeHeader from "@/components/home/Header.vue";
 import HomeSwiper from "@/components/home/Swiper";
 import HomeIcons from "@/components/home/Icons";
